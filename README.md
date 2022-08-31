@@ -1,7 +1,6 @@
-# model4
-
-A new Flutter project.
-https://user-images.githubusercontent.com/66167521/187089773-a725b0e3-853f-4b12-9717-d70795ef7147.mp4
+Fitness Club Project
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/66167521/187718422-306005dc-65fe-4b01-a26a-19c433ac47ee.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/66167521/187718597-b604513d-3d47-41d1-ad0f-e61dc77b7573.gif)
 
 
 ## Getting Started
