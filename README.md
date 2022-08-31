@@ -13,5 +13,7 @@ This project is a starting point for a Flutter application Using Pose Detection 
 
 ## Notes 
 ensure to use flutter 2.10.0 SDK
+
 flutter_lints: ^1.0.0
+
 sdk: ">=2.16.0 <3.0.0"
