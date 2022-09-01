@@ -3,7 +3,7 @@
 
 https://drive.google.com/file/d/10RAuewnVKnASjTFDXPHth7yKlLDN8XS8/view?usp=sharing
 
-![Screenshot 2022-08-31 083901](https://user-images.githubusercontent.com/66167521/187724454-36c61bbb-3b92-4543-8cc5-df4a940fc0e0.png)
+![Screenshot 2022-08-31 083901](https://user-images.githubusercontent.com/66167521/187815071-faf09288-41e4-40ea-86fa-5815057abc05.png)
 
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/66167521/187718422-306005dc-65fe-4b01-a26a-19c433ac47ee.gif)
