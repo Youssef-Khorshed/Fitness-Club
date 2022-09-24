@@ -208,14 +208,20 @@ class _HomeState extends State<BMI> {
               clipBehavior: Clip.antiAliasWithSaveLayer,
               child: MaterialButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Result(
-                    gender: ismale==true ?'Male': 'Female' ,
-                    calc: ismale==true ? 5: 161 ,
-                    age: age.round(),
-                    weight: weight.round(),
-                    height: height.round(),
-                  )));
-                },
+              ismale == null ?ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('please choose your gender'),duration: Duration(seconds: 1),))
+
+                :  Navigator.push(
+                      context, MaterialPageRoute(builder: (context) =>
+                      Result(
+                        gender: ismale == true ? 'Male' : 'Female',
+                        calc: ismale == true ? 5 : 161,
+                        age: age.round(),
+                        weight: weight.round(),
+                        height: height.round(),
+                      )));
+
+
+                  },
                 child: const Text('Calculate',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold)),
               ),
             ),

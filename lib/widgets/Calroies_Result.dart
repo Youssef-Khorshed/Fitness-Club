@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:model4/services/constant.dart';
 
 class Result extends StatelessWidget {
   final String gender;
@@ -18,33 +19,69 @@ class Result extends StatelessWidget {
         leading: IconButton(onPressed:(){Navigator.pop(context);} ,icon: Icon(Icons.arrow_back),),
         title: Text('Result'),
       ),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(20.0),
-          child: Container(
-            padding: EdgeInsets.all(20),
-            decoration: BoxDecoration(color: Color(0xFFF3CDA2),
-                borderRadius: BorderRadius.circular(20)),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text('Gender:  ${gender}',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),)
-                , Text('Age:  ${age}',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),)
-                , Text('Normal BMI:  ${(weight/pow(height/100, 2)).round()}',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),)
-                , Text('Calories needed if used to sit a lot:  ${(((weight*10)+(6.25*height)-(5*age)+calc)*1.2).round()}',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),)
-                , Text('Calories needed if you are an average activity:  ${(((weight*10)+(6.25*height)-(5*age)+calc)*1.55).round()}',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),)
-                , Text('Calories needed if you are high activity:  ${(((weight*10)+(6.25*height)-(5*age)+calc)*1.725).round()}',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),)
+      body: LayoutBuilder(
+        builder: (context, constraints) {
+         double h =  constraints.maxHeight;
+          return    Center(
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Container(
 
-                //If
+                padding: EdgeInsets.all(20),
+                decoration: BoxDecoration(color: Color(0xFFF3CDA2),
+                    borderRadius: BorderRadius.circular(20)),
+                child: ListView(
+                  children: [
+                    Row(children: [
+                      Expanded(child: Text('Gender:',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),)),
+                      Text('${gender}',style: TextStyle(fontSize: 25,color: Colors.white,fontWeight: FontWeight.bold),)
+                    ],)
+             ,  space_hight(hight: h)
+                    ,  Row(children: [
+                      Expanded(child: Text('Age:',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),))
+                      , Text('${age}',style: TextStyle(fontSize: 25,color: Colors.white,fontWeight: FontWeight.bold),)                ],)
+                    ,  space_hight(hight: h)
 
-                // , Text('Maximum Calories needed:  ${((weight*calc*24)+(weight*calc*24*0.7)).round()}',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),)
+                    ,  Row(children: [
+                      Expanded(child: Text('Normal BMI:',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),))
+                      , Text('${(weight/pow(height/100, 2)).round()}',style: TextStyle(fontSize: 25,color: Colors.white,fontWeight: FontWeight.bold),)
+                    ],)
+                    ,  space_hight(hight: h)
 
-              ],
+                    ,  Row(
+                      children: [
+                        Expanded(child: Text('Calories needed if used to sit a lot:',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),))
+                        , Text('${(((weight*10)+(6.25*height)-(5*age)+calc)*1.2).round()}',style: TextStyle(fontSize: 25,color: Colors.white,fontWeight: FontWeight.bold),)
+
+                      ],)
+                    ,  space_hight(hight: h)
+
+                    ,  Row(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Expanded(child: Text('Calories needed if you are an average activity:',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),))
+                        , Text('${(((weight*10)+(6.25*height)-(5*age)+calc)*1.55).round()}',style: TextStyle(fontSize: 25,color: Colors.white,fontWeight: FontWeight.bold),)
+
+                      ],)
+                    ,  space_hight(hight: h)
+
+                    ,  Row(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+
+                      children: [
+                        Expanded(child: Text('Calories needed if you are high activity:',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),))
+                        , Text('${(((weight*10)+(6.25*height)-(5*age)+calc)*1.725).round()}',style: TextStyle(fontSize: 25,color: Colors.white,fontWeight: FontWeight.bold),)
+
+                      ],),
+                  ],
+                ),
+              ),
             ),
-          ),
-        ),
-      ),
+          );
+
+        }),
+
+
     );
   }
 }
