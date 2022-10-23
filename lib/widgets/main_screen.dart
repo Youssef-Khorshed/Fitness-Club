@@ -161,10 +161,10 @@ class MainScreen extends StatelessWidget {
                         width: 140,
                         height: 140,
                         padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: RaisedButton(
+                        child: RawMaterialButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18.0)),
-                          color: Colors.white,
+                          fillColor: Colors.white,
                           child: Container(
                               padding: EdgeInsets.all(10.0),
                               child: Image.asset('images/plank.PNG')),
@@ -246,10 +246,10 @@ class MainScreen extends StatelessWidget {
                         width: 140,
                         height: 140,
                         padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: RaisedButton(
+                        child: RawMaterialButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18.0)),
-                          color: Colors.white,
+                          fillColor: Colors.white,
                           child: Container(
                               padding: EdgeInsets.all(10.0),
                               child: Image.asset('images/yoga4.PNG')),
@@ -267,10 +267,10 @@ class MainScreen extends StatelessWidget {
                         width: 140,
                         height: 140,
                         padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: RaisedButton(
+                        child: RawMaterialButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18.0)),
-                          color: Colors.white,
+                          fillColor: Colors.white,
                           child: Container(
                               padding: EdgeInsets.all(10.0),
                               child: Image.asset('images/yoga2.PNG')),
