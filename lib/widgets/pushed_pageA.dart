@@ -5,8 +5,6 @@ import 'package:model4/services/render_data_arm_press.dart';
 import 'package:tflite/tflite.dart';
 import 'dart:math';
 
-
-
 class PushedPageA extends StatefulWidget {
   final List<CameraDescription>? cameras;
   final String? title;
@@ -25,7 +23,7 @@ class _PushedPageAState extends State<PushedPageA> {
   void initState() {
     super.initState();
     var res = loadModel();
-   // print('Model Response: ' + res.toString());
+    // print('Model Response: ' + res.toString());
   }
 
   _setRecognitions(data, imageHeight, imageWidth) {

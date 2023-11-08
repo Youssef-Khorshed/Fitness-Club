@@ -53,7 +53,7 @@ class MainScreen extends StatelessWidget {
           Container(
             padding: EdgeInsets.only(left: 16.0, right: 16.0),
             child: SizedBox(
-              child: SearchBar('What pose do you wish to align?'),
+              child: Bar('What pose do you wish to align?'),
             ),
           ),
           SizedBox(height: 20),

@@ -23,7 +23,7 @@ class WorkOutPage extends StatelessWidget {
             Image.asset('images/workout.PNG'),
             SizedBox(height:  screen.height/25),
             SizedBox(
-              child: SearchBar('What do you want to do today? Cardio?'),
+              child: Bar('What do you want to do today? Cardio?'),
             ),
             SizedBox(height: screen.height/25),
             SizedBox(
