@@ -89,8 +89,8 @@ class MainScreen extends StatelessWidget {
                               padding: EdgeInsets.all(10.0),
                               child: Image.asset('images/crunch.PNG')),
                           onPressed: () {
-                            onSelect_Yoga(context: context, modelName: 'posenet');
-
+                            onSelect_Yoga(
+                                context: context, modelName: 'posenet');
                           },
                         ),
                       ),
@@ -109,8 +109,8 @@ class MainScreen extends StatelessWidget {
                           child: Container(
                               padding: EdgeInsets.all(10.0),
                               child: Image.asset('images/arm_press.PNG')),
-                          onPressed: () =>
-                              onSelect_Arm(context: context, modelName: 'posenet'),
+                          onPressed: () => onSelect_Arm(
+                              context: context, modelName: 'posenet'),
                         ),
                       ),
                     ],
@@ -129,8 +129,8 @@ class MainScreen extends StatelessWidget {
                               padding: EdgeInsets.all(10.0),
                               child: Image.asset('images/push_up.PNG')),
                           onPressed: () {
-                            onSelect_Arm(context: context, modelName: 'posenet');
-
+                            onSelect_Arm(
+                                context: context, modelName: 'posenet');
                           },
                         ),
                       ),
@@ -149,8 +149,8 @@ class MainScreen extends StatelessWidget {
                           child: Container(
                               padding: EdgeInsets.all(10.0),
                               child: Image.asset('images/squat.PNG')),
-                          onPressed: () =>
-                              onSelect_Squat(context: context, modelName: 'posenet'),
+                          onPressed: () => onSelect_Squat(
+                              context: context, modelName: 'posenet'),
                         ),
                       ),
                     ],
@@ -189,8 +189,8 @@ class MainScreen extends StatelessWidget {
                               padding: EdgeInsets.all(10.0),
                               child: Image.asset('images/lunge_squat.PNG')),
                           onPressed: () {
-                            onSelect_Squat(context: context, modelName: 'posenet');
-
+                            onSelect_Squat(
+                                context: context, modelName: 'posenet');
                           },
                         ),
                       ),
@@ -247,17 +247,17 @@ class MainScreen extends StatelessWidget {
                         height: 140,
                         padding: EdgeInsets.symmetric(horizontal: 10.0),
                         child: RawMaterialButton(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18.0)),
-                          fillColor: Colors.white,
-                          child: Container(
-                              padding: EdgeInsets.all(10.0),
-                              child: Image.asset('images/yoga4.PNG')),
-                          onPressed: () => null
-                              // onSelectY(context: context, modelName: 'posenet'),
-                              //
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(18.0)),
+                            fillColor: Colors.white,
+                            child: Container(
+                                padding: EdgeInsets.all(10.0),
+                                child: Image.asset('images/yoga4.PNG')),
+                            onPressed: () => null
+                            // onSelectY(context: context, modelName: 'posenet'),
+                            //
 
-                        ),
+                            ),
                       ),
                     ],
                   ),
@@ -295,7 +295,8 @@ class MainScreen extends StatelessWidget {
                               padding: EdgeInsets.all(10.0),
                               child: Image.asset('images/yoga3.PNG')),
                           onPressed: () {
-                            onSelect_Yoga(context: context, modelName: 'posenet');
+                            onSelect_Yoga(
+                                context: context, modelName: 'posenet');
                           },
                         ),
                       ),
@@ -315,7 +316,8 @@ class MainScreen extends StatelessWidget {
                               padding: EdgeInsets.all(10.0),
                               child: Image.asset('images/yoga5.PNG')),
                           onPressed: () {
-                            onSelect_Yoga(context: context, modelName: 'posenet');
+                            onSelect_Yoga(
+                                context: context, modelName: 'posenet');
                           },
                         ),
                       ),
@@ -325,14 +327,14 @@ class MainScreen extends StatelessWidget {
               ),
             ),
           ),
-
         ],
       ),
     );
   }
 }
 
-void onSelect_Arm({required BuildContext context, required String modelName}) async {
+void onSelect_Arm(
+    {required BuildContext context, required String modelName}) async {
   Navigator.push(
     context,
     MaterialPageRoute(
@@ -344,7 +346,8 @@ void onSelect_Arm({required BuildContext context, required String modelName}) as
   );
 }
 
-void onSelect_Squat({required BuildContext context, required String modelName}) async {
+void onSelect_Squat(
+    {required BuildContext context, required String modelName}) async {
   Navigator.push(
     context,
     MaterialPageRoute(
@@ -356,7 +359,8 @@ void onSelect_Squat({required BuildContext context, required String modelName}) 
   );
 }
 
-void onSelect_Yoga({required BuildContext context, required String modelName}) async {
+void onSelect_Yoga(
+    {required BuildContext context, required String modelName}) async {
   Navigator.push(
     context,
     MaterialPageRoute(
