@@ -340,7 +340,7 @@ class _RenderDataArmPressState extends State<RenderDataArmPress> {
             child: Column(
               children: [
                 Text(
-                  '$whatToDo\nArm Presses: ${_counter.toString()}',
+                  '$whatToDo Arm Presses: ${_counter.toString()}',
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
               ],

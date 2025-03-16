@@ -52,14 +52,14 @@ class _RenderDataYogaState extends State<RenderDataYoga> {
   @override
   void initState() {
     inputArr = new Map();
-    correctColor = Colors.red;
+    correctColor = Colors.yellow;
     wristAlignment = false;
     shoulderAlignment = false;
     ankleAlignment = false;
     kneeAndHipAlignment = false;
-    armColor = Colors.red;
-    shoulderColor = Colors.red;
-    legColor = Colors.red;
+    armColor = Colors.yellow;
+    shoulderColor = Colors.yellow;
+    legColor = Colors.yellow;
     super.initState();
   }
 

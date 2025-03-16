@@ -52,4 +52,4 @@ post_install do |installer|
     end
   end
 end
-pod 'TensorFlowLiteC', '2.2.0'
+#pod 'TensorFlowLiteC', '2.2.0'

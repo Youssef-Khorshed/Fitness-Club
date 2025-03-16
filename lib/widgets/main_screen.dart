@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 import 'package:model4/widgets/pushed_pageY.dart';
 import 'package:model4/widgets/shape.dart';
-
-import '../main.dart';
 import 'pushed_pageA.dart';
 import 'pushed_pageS.dart';
 
@@ -338,9 +336,8 @@ void onSelect_Arm(
   Navigator.push(
     context,
     MaterialPageRoute(
-      builder: (context) => PushedPageA(
-        cameras: cameras!,
-        title: modelName,
+      builder: (context) => PoseDetectionScreenArm(
+
       ),
     ),
   );
@@ -351,9 +348,8 @@ void onSelect_Squat(
   Navigator.push(
     context,
     MaterialPageRoute(
-      builder: (context) => PushedPageS(
-        cameras: cameras,
-        title: modelName,
+      builder: (context) => PoseDetectionScreenTrain(
+
       ),
     ),
   );
@@ -364,10 +360,10 @@ void onSelect_Yoga(
   Navigator.push(
     context,
     MaterialPageRoute(
-      builder: (context) => PushedPageY(
-        cameras: cameras,
-        title: modelName,
-      ),
+      builder: (context) =>
+
+          PoseDetectionScreenYoga(
+      )
     ),
   );
 }
