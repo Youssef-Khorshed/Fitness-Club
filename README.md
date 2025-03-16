@@ -1,8 +1,7 @@
 ## Fitness Club Project
 ## APK link 
 
-https://drive.google.com/file/d/10RAuewnVKnASjTFDXPHth7yKlLDN8XS8/view?usp=sharing
-
+![ScreenRecording2025-03-16at1 01 02PM-ezgif com-crop](https://github.com/user-attachments/assets/b0b73d95-fe09-4820-839d-68f279a85e97)
 ![Screenshot 2022-10-23 072528](https://github.com/Youssef-Khorshed/Fitness-Club/assets/66167521/3b451aa2-ce1b-4776-8de9-ae56ff7bcbcc)
 ![Screenshot 2022-10-23 075805_prev_ui](https://github.com/Youssef-Khorshed/Fitness-Club/assets/66167521/dd57af34-7743-4e0c-9252-adb71c15bb2d)
 ![Screenshot 2022-10-23 075918_prev_ui](https://github.com/Youssef-Khorshed/Fitness-Club/assets/66167521/4ec526f8-b6ec-466e-b31a-3c5c469ca6a9)
