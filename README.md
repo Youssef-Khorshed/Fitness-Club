@@ -18,8 +18,8 @@
 This project is a starting point for a Flutter application Using Pose Detection AI Model.
 
 ## Notes 
-ensure to use flutter 2.10.0 SDK
 
-flutter_lints: ^1.0.0
-
-sdk: ">=2.16.0 <3.0.0"
+  sdk: ^3.5.3
+  Gradle AGP 8.7.3
+  jDK 21.0.3
+  grale wrapper 8.9
